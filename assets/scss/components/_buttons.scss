@@ -490,8 +490,8 @@
 		border-radius: 30px;
 		display: inline-block;
 		text-transform: uppercase;
-		color: #2A4C3A;
-		border: 1px solid #2A4C3A;
+		color: #314c66;
+		border: 1px solid #314c66;
 		& span{
 			position: relative;
 			z-index: 1;
@@ -533,7 +533,7 @@
 			}
 		}
 		&:hover{
-			color: #2A4C3A;
+			color: #314c66;
 			& span{
 				& span{
 					&.text-1{
@@ -561,7 +561,7 @@
 			}
 		}
 		&:focus{
-			color: #2A4C3A;
+			color: #314c66;
 		}
 	}
 	&-yellow-green{
