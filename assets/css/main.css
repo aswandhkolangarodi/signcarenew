@@ -936,7 +936,7 @@ input[type=color] {
 /*----------------------------------------*/
 .back-to-top-wrapper {
   position: fixed;
-  right: 50px;
+  right: 22px;
   bottom: 0;
   height: 44px;
   width: 44px;
@@ -956,7 +956,7 @@ input[type=color] {
 .back-to-top-wrapper.back-to-top-btn-show {
   visibility: visible;
   opacity: 1;
-  bottom: 50px;
+  bottom: 33px;
 }
 
 .back-to-top-btn {

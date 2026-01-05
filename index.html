@@ -69,6 +69,84 @@
         div[id] {
             scroll-margin-top: 100px;
         }
+
+        /* Floating Social Buttons */
+        .social-floating {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            z-index: 9999;
+        }
+
+        .social-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 28px;
+            text-decoration: none;
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .social-btn:hover {
+            transform: translateY(-4px) scale(1.06);
+            box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        /* WhatsApp */
+        .social-btn.whatsapp {
+            background-color: #25D366;
+        }
+
+        /* Instagram */
+        .social-btn.instagram {
+            background: radial-gradient(circle at 30% 107%,
+                    #fdf497 0%, #fdf497 5%, #fd5949 45%,
+                    #d6249f 60%, #285AEB 90%);
+        }
+
+        @media (max-width: 768px) {
+            .social-floating {
+                bottom: 90px;
+                /* avoids browser UI */
+                right: 16px;
+                gap: 12px;
+            }
+
+            .social-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-floating {
+                bottom: 100px;
+                /* safe for Chrome + iOS */
+                right: 14px;
+            }
+
+            .social-btn {
+                width: 46px;
+                height: 46px;
+                font-size: 22px;
+            }
+        }
+
+        @supports (padding-bottom: env(safe-area-inset-bottom)) {
+            .social-floating {
+                bottom: calc(90px + env(safe-area-inset-bottom));
+                right: calc(16px + env(safe-area-inset-right));
+            }
+        }
     </style>
 
 </head>
@@ -101,6 +179,18 @@
         </button>
     </div>
     <!-- back to top end -->
+
+    <!-- Social Media Floating Buttons -->
+    <div class="social-floating">
+        <a href="https://wa.me/15551234567" target="_blank" class="social-btn whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/signareacademy" target="_blank" class="social-btn instagram"
+            aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
 
     <!-- tp-offcanvus-area-start -->
     <div class="tp-offcanvas-area">
@@ -165,9 +255,10 @@
                     <ul>
                         <li><a href="tel:9037018010">+91 90370 18010</a></li>
                         <li><a href="tel:9387401010">+91 93874 01010</a></li>
-                        <li><a href="/cdn-cgi/l/email-protection#45362c222b2437202426242120283c052228242c296b262a28"><span
-                                    class="__cf_email__"
-                                    data-cfemail="a1d2c8c6cfc0d3c4c0c2c0c5c4ccd8e1c6ccc0c8cd8fc2cecc">[email&#160;protected]</span></a>
+                        <li><a href="mailto:signareacademy@gmail.com"><span
+                                    class="__cf_email__">signareacademy@gmail.com</span></a>
+
+
                         </li>
                         <li><a href="#">Kazhungil plaza, Puthuparamba road, College padi, Edarikkod koottakal, Kerala
                                 676501</a></li>
@@ -669,7 +760,7 @@
                                             <span>Transform Lives</span>
                                         </h2>
                                     </div>
-                                   
+
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-4">
@@ -1494,7 +1585,7 @@
                                                 <span><img src="assets/img/contact/map-icon.svg" alt=""></span>
                                             </div>
                                         </div>
-                                        
+
                                         <iframe
                                             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3916.526557916957!2d75.98202487504508!3d10.999063889163535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDU5JzU2LjYiTiA3NcKwNTknMDQuNiJF!5e0!3m2!1sen!2sin!4v1767606293289!5m2!1sen!2sin"
                                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -1638,10 +1729,8 @@
                                     </div>
                                     <div class="crp-footer-widget-info">
                                         <h4 class="crp-footer-widget-title">Contact Us</h4>
-                                        <a class="tp-line-white cream-2"
-                                            href="/cdn-cgi/l/email-protection#eb98828c858a998e8a888a8f8e8692ab8c868a8287c5888486"><span
-                                                class="__cf_email__"
-                                                data-cfemail="fa89939d949b889f9b999b9e9f9783ba9d979b9396d4999597">[email&#160;protected]</span></a>
+                                        <a class="tp-line-white cream-2" href="mailto:signareacademy@gmail.com"><span
+                                                class="__cf_email__">signareacademy@gmail.com</span></a>
                                         <a class="tel tp-line-white cream-2 d-inline-block" href="tel:+919037018010">+91
                                             90370 18010</a>
                                         <a class="tel tp-line-white cream-2 d-inline-block" href="tel:+919387401010">+91
