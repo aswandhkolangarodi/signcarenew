@@ -360,7 +360,7 @@ li,
   --tp-cream-1: #B7AB98;
   --tp-cream-2: #CFC292;
   --tp-text-body: #2e2d2d;
-  --tp-theme-green: #A0FF27;
+  --tp-theme-green: #2b4359;
   --tp-theme-pink: #EC6FD5;
   --tp-theme-yellow: #FFB701;
   --tp-border-1: #EAEBED;
@@ -13669,10 +13669,7 @@ body.tp-magic-cursor #magic-cursor {
   padding: 40px;
   background-repeat: no-repeat;
 }
-.crp-hero-funfact-top-content {
-  padding-right: 60px;
-  margin-bottom: 45px;
-}
+
 .crp-hero-funfact-top-content h4 {
   font-weight: 600;
   font-size: 28px;
